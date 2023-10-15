@@ -21,3 +21,7 @@ The frontend was developed using ReactJS and the [React ChartJS 2](https://www.c
 The backend was developed using Golang and GCP's [Cloud Functions](https://cloud.google.com/functions).
 
 [Backend Repository](https://github.com/oguzhantasimaz/steampie-func)
+
+## Screenshots
+
+![Screenshot 1](https://github.com/oguzhantasimaz/steampie/blob/main/screenshot.png)
