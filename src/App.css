@@ -133,3 +133,10 @@
   font-size: 35px;
   margin-bottom: 20px;
 }
+
+.spinner{
+  position: relative;
+  top: 50%;
+  margin: auto;
+  margin-top: 50px;
+}

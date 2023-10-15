@@ -65,18 +65,17 @@ function App() {
         placeholder="Example: 76561198092421830"
       />
       <br/>
-      <button className="custom-button" onClick={fetchSteamData}>Bring my PIE!</button>
+      <button disabled={isLoading} className="custom-button" onClick={fetchSteamData}>Bring my PIE!</button>
 
       {isLoading ? (
-      <div className="loading-container">
+      <div className="spinner">
         <InfinitySpin
-          height="150"
-          width="150"
           radius="9"
           color="orange"
           ariaLabel="loading"
           wrapperStyle
           wrapperClass
+          style = {{ position: "absolute", top: "100", left: "50%" }} 
         />
       </div>
     ) : (
