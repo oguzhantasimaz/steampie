@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.top-games-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  
+}
+
+.top-games-list li {
+  margin: 8px 0;
+  font-size: 16px; /* Initial font size */
+  transition: font-size 0.3s; /* Smooth transition */
+}
+
+.top-games-list li:hover {
+  font-size: 12px; /* Smaller font size on hover */
+}
