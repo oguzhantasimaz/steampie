@@ -2,6 +2,7 @@
   "name": "pie-chart-app",
   "version": "0.1.0",
   "private": true,
+  "author": "Oguzhan Tasimaz <oguzhantasimaz@gmail.com> (https://github.com/oguzhantasimaz)",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
