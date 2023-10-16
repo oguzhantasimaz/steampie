@@ -3,6 +3,7 @@ import axios from 'axios';
 import './App.css';
 import GenrePieChart from './GenrePieChart';
 import { InfinitySpin } from "react-loader-spinner";
+import { Analytics } from '@vercel/analytics/react';
 import Colors from "./Utils";
 // import CategoryPieChart from './CategoryPieChart';
 
@@ -105,6 +106,7 @@ function App() {
       ) : ""}
 
     </> )}
+    <Analytics />
     </div>
   );
 }
