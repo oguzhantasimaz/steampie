@@ -48,8 +48,6 @@
   max-height: 1000px;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .top-games-list {
@@ -126,7 +124,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 200px;
 }
 
 .top-games-title{
