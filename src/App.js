@@ -16,9 +16,14 @@ function App() {
   const [includeFreeGames, setIncludeFreeGames] = useState(true);
 
   const handleSteamIdChange = (event) => {
-    //if it's not a number, don't let them type it
-    if (isNaN(event.target.value)) {
-      return;
+    //if it contains spaces, remove them
+    if (event.target.value.includes(" ")) {
+      event.target.value = event.target.value.replace(/\s/g, "");
+    }
+
+    //if it contains letters, remove them
+    if (event.target.value.match(/[a-z]/i)) {
+      event.target.value = event.target.value.replace(/[a-z]/gi, "");
     }
 
     setSteamId(event.target.value);
