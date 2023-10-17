@@ -13,8 +13,14 @@ function App() {
   // const [categoryData, setCategoryData] = useState(null);
   const [topGames, setTopGames] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [includeFreeGames, setIncludeFreeGames] = useState(true);
 
   const handleSteamIdChange = (event) => {
+    //if it's not a number, don't let them type it
+    if (isNaN(event.target.value)) {
+      return;
+    }
+
     setSteamId(event.target.value);
   };
 
@@ -29,6 +35,7 @@ function App() {
         "https://us-central1-steampie.cloudfunctions.net/function-1",
         {
           steamId,
+          includeFreeGames,
         }
       );
 
@@ -70,6 +77,9 @@ function App() {
         style={{ width: "185px" }}
         placeholder="Example: 76561198092421830"
       />
+      <br />
+      <span className="free-games-span">Include Free Games (Dota 2, Counter Strike...)</span>
+      <input className="check-box" type="checkbox" checked={includeFreeGames} onChange={() => setIncludeFreeGames(!includeFreeGames)} />
       <br />
       <button
         disabled={isLoading}
