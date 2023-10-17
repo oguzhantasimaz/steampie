@@ -78,7 +78,7 @@ function App() {
         placeholder="Example: 76561198092421830"
       />
       <br />
-      <span className="free-games-span">Include Free Games (Dota 2, Counter Strike...)</span>
+      <span className="free-games-span">Include Free Games</span>
       <input className="check-box" type="checkbox" checked={includeFreeGames} onChange={() => setIncludeFreeGames(!includeFreeGames)} />
       <br />
       <button
